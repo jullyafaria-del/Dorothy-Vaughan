@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorothy Vaughan - Biografia & Legado</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        nasa: {
+                            blue: '#0B3D91',
+                            red: '#FC3D21',
+                            dark: '#081c3e',
+                            light: '#f4f6fb'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <header class="bg-nasa-dark text-white sticky top-0 z-40 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+            <div class="flex items-center space-x-3">
+                <i class="fa-solid font-bold text-nasa-red text-2xl fa-rocket"></i>
+                <span class="font-bold text-xl tracking-wide">Pioneiras da Tech</span>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#inicio" class="hover:text-nasa-red transition-colors">Início</a>
+                <a href="#historia" class="hover:text-nasa-red transition-colors">História</a>
+                <a href="#feitos" class="hover:text-nasa-red transition-colors">Feitos</a>
+                <a href="#curiosidades" class="hover:text-nasa-red transition-colors">Curiosidades</a>
+            </nav>
+
+            <div>
+                <button id="openLoginBtn" class="bg-nasa-red hover:bg-red-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all flex items-center gap-2 shadow-lg hover:shadow-red-500/30">
+                    <i class="fa-solid fa-user"></i> Entrar / Cadastrar
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="gradient-bg text-white py-16 md:py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center relative z-10">
+            <div>
+                <span class="inline-block bg-nasa-red/20 text-nasa-red font-semibold text-xs px-3 py-1 rounded-full uppercase tracking-wider mb-4 border border-nasa-red/30">
+                    Matemática & Programadora
+                </span>
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4 leading-tight">
+                    Dorothy Vaughan
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
+                    A mente brilhante que liderou as 'computadoras humanas' da NASA e dominou a linguagem FORTRAN na alvorada da era da computação.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#historia" class="bg-white text-nasa-dark px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors shadow">
+                        Conhecer História
+                    </a>
+                    <a href="#feitos" class="border border-white/30 text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors">
+                        Ver Conquistas
+                    </a>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="relative w-72 h-72 md:w-80 md:h-80 rounded-2xl overflow-hidden border-4 border-white/20 shadow-2xl">
+                    <img src="dorothy.jpg" alt="Dorothy Vaughan" class="w-full h-full object-cover">                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="historia" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-nasa-dark">História e Trajetória</h2>
+                <div class="w-16 h-1 bg-nasa-red mx-auto mt-2 rounded"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-nasa-light p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="w-12 h-12 bg-nasa-blue text-white rounded-lg flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Primeiros Anos</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Nascida em 1910 na Virgínia, formou-se em Matemática aos 19 anos na Wilberforce University. Trabalhou como professora antes de se juntar ao laboratório da NACA (atual NASA) em 1943.
+                    </p>
+                </div>
+
+                <div class="bg-nasa-light p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="w-12 h-12 bg-nasa-blue text-white rounded-lg flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Liderança na NACA/NASA</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Tornou-se a primeira supervisora afro-americana da NACA na unidade segregada "West Area Computers". Liderou com excelência um grupo de mulheres brilhantes que realizavam cálculos complexos.
+                    </p>
+                </div>
+
+                <div class="bg-nasa-light p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="w-12 h-12 bg-nasa-blue text-white rounded-lg flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Pioneira em Computação</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Prevendo o surgimento dos computadores digitais IBM, aprendeu e ensinou de forma autodidata a linguagem de programação FORTRAN para suas subordinadas, garantindo a transição da equipe para a era digital.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="feitos" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-nasa-dark">Grandes Feitos</h2>
+                <div class="w-16 h-1 bg-nasa-red mx-auto mt-2 rounded"></div>
+            </div>
+
+            <div class="space-y-4 max-w-4xl mx-auto">
+                <div class="bg-white p-5 rounded-lg shadow-sm border-l-4 border-nasa-blue flex items-start space-x-4">
+                    <i class="fa-solid fa-circle-check text-nasa-blue text-xl mt-1"></i>
+                    <div>
+                        <h4 class="font-bold text-gray-900">Primeira Supervisora Negra da NACA</h4>
+                        <p class="text-gray-600 text-sm">Promovida oficialmente em 1949, pavimentou o caminho para outras mulheres e minorias na corrida espacial.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-5 rounded-lg shadow-sm border-l-4 border-nasa-blue flex items-start space-x-4">
+                    <i class="fa-solid fa-circle-check text-nasa-blue text-xl mt-1"></i>
+                    <div>
+                        <h4 class="font-bold text-gray-900">Contribuição para o Programa Espacial (Projeto Mercury)</h4>
+                        <p class="text-gray-600 text-sm">Seus cálculos e os da sua equipe garantiram o sucesso do voo orbital do astronauta John Glenn.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-5 rounded-lg shadow-sm border-l-4 border-nasa-blue flex items-start space-x-4">
+                    <i class="fa-solid fa-circle-check text-nasa-blue text-xl mt-1"></i>
+                    <div>
+                        <h4 class="font-bold text-gray-900">Especialista em FORTRAN</h4>
+                        <p class="text-gray-600 text-sm">Contribuiu diretamente no projeto do foguete Scout através da programação e análise de dados em linguagem FORTRAN.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="curiosidades" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-nasa-dark">Curiosidades</h2>
+                <div class="w-16 h-1 bg-nasa-red mx-auto mt-2 rounded"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <div class="bg-nasa-light p-6 rounded-xl flex gap-4 items-center">
+                    <i class="fa-solid fa-film text-3xl text-nasa-red"></i>
+                    <div>
+                        <h4 class="font-bold text-gray-800">Estrela de Cinema</h4>
+                        <p class="text-sm text-gray-600">Sua história é contada no filme aclamado pelo público e pela crítica "Estrelas Além do Tempo" (2016), onde é interpretada pela atriz Octavia Spencer.</p>
+                    </div>
+                </div>
+
+                <div class="bg-nasa-light p-6 rounded-xl flex gap-4 items-center">
+                    <i class="fa-solid fa-award text-3xl text-nasa-red"></i>
+                    <div>
+                        <h4 class="font-bold text-gray-800">Medalha de Ouro do Congresso</h4>
+                        <p class="text-sm text-gray-600">Em 2019, Dorothy recebeu postumamente a Medalha de Ouro do Congresso Americano, a mais alta honraria civil dos Estados Unidos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-nasa-dark text-white py-8 border-t border-white/10 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 text-center text-sm text-gray-400">
+            <p>Trabalho Acadêmico - Biografia na Tecnologia | Integração com Spring Boot</p>
+            <p class="mt-1">Professor Git: <span class="text-nasa-red font-mono">pesxco</span></p>
+        </div>
+    </footer>
+
+    <div id="authModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden justify-center items-center p-4 z-50">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full overflow-hidden relative">
+            <button id="closeModalBtn" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="flex border-b">
+                <button id="tabLogin" class="w-1/2 py-4 font-bold text-center text-nasa-blue border-b-2 border-nasa-blue transition-all">
+                    Login
+                </button>
+                <button id="tabRegister" class="w-1/2 py-4 font-bold text-center text-gray-500 hover:text-nasa-blue transition-all">
+                    Cadastro
+                </button>
+            </div>
+
+            <div class="p-6">
+                <div class="mb-4 text-xs bg-blue-50 text-nasa-blue p-2 rounded flex items-center gap-2">
+                    <i class="fa-solid fa-server"></i>
+                    <span>Endpoint API: <strong id="apiEndpoint">POST /api/auth/login</strong></span>
+                </div>
+
+                <form id="loginForm" class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">E-mail</label>
+                        <input type="email" id="loginEmail" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-nasa-blue" placeholder="seu@email.com">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Senha</label>
+                        <input type="password" id="loginPassword" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-nasa-blue" placeholder="••••••••">
+                    </div>
+                    <button type="submit" class="w-full bg-nasa-blue hover:bg-blue-800 text-white font-bold py-2 rounded-lg transition-colors">
+                        Entrar
+                    </button>
+                </form>
+
+                <form id="registerForm" class="space-y-4 hidden">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Nome Completo</label>
+                        <input type="text" id="regName" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-nasa-blue" placeholder="Seu Nome">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">E-mail</label>
+                        <input type="email" id="regEmail" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-nasa-blue" placeholder="seu@email.com">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Senha</label>
+                        <input type="password" id="regPassword" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-nasa-blue" placeholder="••••••••">
+                    </div>
+                    <button type="submit" class="w-full bg-nasa-red hover:bg-red-600 text-white font-bold py-2 rounded-lg transition-colors">
+                        Cadastrar no Spring Backend
+                    </button>
+                </form>
+
+                <div id="authMessage" class="mt-4 p-3 text-xs rounded hidden"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const authModal = document.getElementById('authModal');
+        const openLoginBtn = document.getElementById('openLoginBtn');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+        
+        const tabLogin = document.getElementById('tabLogin');
+        const tabRegister = document.getElementById('tabRegister');
+        const loginForm = document.getElementById('loginForm');
+        const registerForm = document.getElementById('registerForm');
+        const apiEndpoint = document.getElementById('apiEndpoint');
+        const authMessage = document.getElementById('authMessage');
+
+        openLoginBtn.addEventListener('click', () => authModal.classList.add('modal-active'));
+        closeModalBtn.addEventListener('click', () => authModal.classList.remove('modal-active'));
+
+        tabLogin.addEventListener('click', () => {
+            tabLogin.className = "w-1/2 py-4 font-bold text-center text-nasa-blue border-b-2 border-nasa-blue transition-all";
+            tabRegister.className = "w-1/2 py-4 font-bold text-center text-gray-500 hover:text-nasa-blue transition-all";
+            loginForm.classList.remove('hidden');
+            registerForm.classList.add('hidden');
+            apiEndpoint.innerText = "POST /api/auth/login";
+            authMessage.classList.add('hidden');
+        });
+
+        tabRegister.addEventListener('click', () => {
+            tabRegister.className = "w-1/2 py-4 font-bold text-center text-nasa-blue border-b-2 border-nasa-blue transition-all";
+            tabLogin.className = "w-1/2 py-4 font-bold text-center text-gray-500 hover:text-nasa-blue transition-all";
+            registerForm.classList.remove('hidden');
+            loginForm.classList.add('hidden');
+            apiEndpoint.innerText = "POST /api/auth/register";
+            authMessage.classList.add('hidden');
+        });
+
+        loginForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+
+            try {
+                authMessage.className = "mt-4 p-3 text-xs rounded bg-green-100 text-green-700 border border-green-200 block";
+                authMessage.innerText = `Login realizado com sucesso para: ${email} (Simulado Spring Boot API)`;
+            } catch (err) {
+                authMessage.className = "mt-4 p-3 text-xs rounded bg-red-100 text-red-700 border border-red-200 block";
+                authMessage.innerText = "Erro ao conectar com a API Spring Boot.";
+            }
+        });
+
+        registerForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const name = document.getElementById('regName').value;
+            const email = document.getElementById('regEmail').value;
+
+            authMessage.className = "mt-4 p-3 text-xs rounded bg-green-100 text-green-700 border border-green-200 block";
+            authMessage.innerText = `Usuário ${name} cadastrado com sucesso no Spring Security Backend!`;

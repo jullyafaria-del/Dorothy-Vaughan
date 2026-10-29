@@ -1,0 +1,7 @@
+.gradient-bg {
+    background: linear-gradient(135deg, #0B3D91 0%, #081c3e 100%);
+}
+
+.modal-active {
+    display: flex !important;
+}
