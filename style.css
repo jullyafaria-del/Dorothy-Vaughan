@@ -1,7 +1,47 @@
-.gradient-bg {
-    background: linear-gradient(135deg, #0B3D91 0%, #081c3e 100%);
+/* Efeito de Vidro (Glassmorphism) */
+.glass-card {
+    background: rgba(11, 21, 40, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
+/* Estilização para os Botões da Linha do Tempo */
+.tl-btn {
+    color: #9CA3AF;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.tl-btn:hover {
+    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+.tl-btn.active {
+    background: linear-gradient(135deg, #FF5500 0%, #FF0055 100%);
+    color: #FFFFFF;
+    border-color: transparent;
+    box-shadow: 0 8px 20px rgba(255, 85, 0, 0.4);
+    transform: scale(1.05);
+}
+
+/* Modal Visibilidade */
 .modal-active {
     display: flex !important;
+}
+
+/* Animações e Efeitos */
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(12px) scale(0.98); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0) scale(1); 
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
